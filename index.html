@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+//5
+
+var today = new Date();
+
+ var targetDate = new Date(today.getFullYear(), 7, 14); 
+ var difference = targetDate - today;
+
+ var daysLeft = Math.ceil(difference / (1000 * 60 * 60 * 24));
+
+ console.log("Days left before 14th August:", daysLeft);
+
+//1
+
+var daate=new Date();
+ var split= daate.toString();
+console.log(typeof split);
+var tosplit=split.split(" ");
+console.log(tosplit[0]);
+
+if(tosplit[0]==="mon"){
+    console.log(`Today is ${tosplit[0]}day `)
+}
+if(tosplit[0]==="Tue"){
+    console.log(`Today is ${tosplit[0]}sday `)
+}
+if(tosplit[0]==="wed"){
+    console.log(`Today is ${tosplit[0]}nesday `)
+}
+if(tosplit[0]==="thu"){
+    console.log(`Today is ${tosplit[0]}rsday `)
+}
+if(tosplit[0]==="fri"){
+    console.log(`Today is ${tosplit[0]}day `)
+}
+if(tosplit[0]==="sat"){
+    console.log(`Today is ${tosplit[0]}urday `)
+}
+if(tosplit[0]==="sun"){
+    console.log(`Today is ${tosplit[0]}day `)
+}
+//7
+
+var number = prompt("enter any positive number")
+
+
+if (number % 3 === 0 || number % 7 === 0) {
+   alert(number + " is a multiple of  3 or 7.");
+} else {
+    alert(number + " is not a multiple of 3 or 7.");
+}
+
+//4
+
+var randomNumber = Math.floor(Math.random() * 10) + 1;
+
+var user = parseInt(prompt("Guess a number between 1 and 10:"));
+
+if (user === randomNumber) {
+    console.log("Good Work!");
+} else {
+    console.log("Not matched. The correct number was: " + randomNumber);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
